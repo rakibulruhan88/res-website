@@ -1,0 +1,99 @@
+.main {
+  height: 34vw;
+  margin: 30px auto;
+
+  background: url(/header_img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+}
+
+.main-components {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadein 3s;
+}
+
+.main-components h2{
+    color: white;
+    font-weight: 700;
+    font-size: max(4.5vw, 24px);
+}
+
+.main-components h2 span{
+    color: rgb(196, 100, 21);
+}
+
+.main-components p{
+    color: white;
+    font-size: max(1vw);
+}
+
+.main-components button{
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 2px orange solid;
+}
+
+@media (max-width:1050px) {
+    /* .main{
+        height: 35vw;
+    } */
+    /* .main-components{
+        max-width: 45%;
+    } */
+}
+
+@media (max-width:750px) {
+   
+    .main-components{
+        max-width: 85%;
+    }
+
+    .main-components p{
+        display: none;
+    }
+
+    .main-components h2{
+    font-size: max(4.5vw, 34px);
+            
+    }
+    .main-components button{
+        border: none;
+        color: #ffffff;
+        font-weight: 200;
+        padding: 5px 10px;
+        border-radius: 50px;
+        border: 1px orange solid;
+        font-size: 14px;
+    }
+}
+@media (max-width:450px) {
+ 
+    .main-components{
+        max-width: 85%;
+    }
+    .main-components h2{
+    font-size: max(4.5vw, 24px);       
+    }
+    .main-components button{
+        border: none;
+        color: #ffffff;
+        font-weight: 400;
+        padding: 5px 10px;
+        border-radius: 50px;
+        border: 2px orange solid;
+        font-size: 14px;
+    }
+    
+}
