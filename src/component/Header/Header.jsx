@@ -26,25 +26,27 @@ function Header({ setlogin }) {
                 </a>
               </li>
             </Link>
-            <li>
-              <a
-                onClick={() => setmenu("menu")}
-                className={menu === "menu" ? "active" : ""}
-                href="/cart"
-              >
-                Cart
-              </a>
-            </li>
+            <Link to="/cart">
+              <li>
+                <a
+                  onClick={() => setmenu("menu")}
+                  className={menu === "menu" ? "active" : ""}
+                  href=""
+                >
+                  Cart
+                </a>
+              </li>
+            </Link>
             <Link to="/contact">
-            <li>
-              <a
-                onClick={() => setmenu("contact")}
-                className={menu === "contact" ? "active" : ""}
-                href=""
-              >
-                Contact
-              </a>
-            </li>
+              <li>
+                <a
+                  onClick={() => setmenu("contact")}
+                  className={menu === "contact" ? "active" : ""}
+                  href=""
+                >
+                  Contact
+                </a>
+              </li>
             </Link>
             <Link to="/download">
               <li>
