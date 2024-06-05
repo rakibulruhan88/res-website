@@ -4,6 +4,7 @@ import "./header.css";
 import { BiMenu } from "react-icons/bi";
 import { BiX } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 function Header({ setlogin }) {
   const [menu, setmenu] = useState("home");
   const [menubtn, setmenubtn] = useState(false);
@@ -61,7 +62,9 @@ function Header({ setlogin }) {
             </Link>
           </ul>
         </div>
-        <div
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
           className={menubtn == false ? "second-nav menu-active" : "second-nav"}
         >
           <ul>
@@ -83,7 +86,7 @@ function Header({ setlogin }) {
               <a href="#download-app">Mobile app</a>
             </li>
           </ul>
-        </div>
+        </motion.div>
         <div className="cart">
           {/* <img src={assets.search_icon} alt="" /> */}
           <div className="nav_cart">

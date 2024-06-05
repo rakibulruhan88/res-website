@@ -115,10 +115,7 @@
   display: none;
 }
 
-.menu-active {
-  margin-top: -500px;
-  transition: all 0.3s;
-}
+
 
 @media (max-width: 1050px) {
   .header .logo {
@@ -175,5 +172,11 @@
   .menu {
     display: block;
     width: 100px;
+  }
+
+  .menu-active {
+    /* margin-top: -1000px; */
+    display: none;
+    transition: all 0.3s;
   }
 }
